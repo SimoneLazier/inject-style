@@ -1,22 +1,24 @@
 {
-    "name": "inject-style",
-    "version": "1.0.0",
-    "license": "MIT",
-    "main": "./dist/index.umd.js",
-    "module": "./dist/index.es.js",
-    "exports": {
-        ".": {
-            "import": "./dist/index.es.js",
-            "require": "./dist/index.umd.js"
-        }
-    },
-    "devDependencies": {
-        "eslint": "^7.32.0",
-        "eslint-config-prettier": "^8.3.0",
-        "typescript": "^4.4.2"
-    },
-    "scripts": {
-        "build": "tsc",
-        "test": "jest"
-    }
+  "name": "inject-style",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "files": [
+    "dist/"
+  ],
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "typescript": "^4.4.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": [
+      "prettier"
+    ]
+  }
 }
