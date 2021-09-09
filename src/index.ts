@@ -2,7 +2,7 @@ export default (...css: string[]) => {
   const sheet = new CSSStyleSheet();
   css
     .join("")
-    .replaceAll(/(\/\*.*?\*\/)|.*\{.*;\s\}\s\}/gs, "")
+    .replaceAll(/(\/\*.*?\*\/)/gs, "")
     .split("}")
     .filter(
       (rule) =>
