@@ -1,6 +1,6 @@
 {
-  "name": "@simone-lazier/inject-style",
-  "version": "1.0.3",
+  "name": "inject-style",
+  "version": "1.0.4",
   "description": "",
   "license": "MIT",
   "main": "./dist/index.js",
