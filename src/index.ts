@@ -9,7 +9,7 @@ export default (...css: string[]) => {
         !rule.includes("-moz-") && !rule.includes("-ms-") && rule.trim() !== ""
     )
     .map((rule) => rule + "}")
-    .forEach((rule) => sheet.insertRule(rule));
+    .forEach((rule, i) => sheet.insertRule(rule, i));
 
   type WebComponent = typeof HTMLElement;
 
